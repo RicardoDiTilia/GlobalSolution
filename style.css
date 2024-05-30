@@ -1,13 +1,104 @@
-#principal-footer{
-    background-color: #012677;
-}
-
-#principal-footer img{
-    width: 5%;
+body {
+    font-family: 'Reddit Mono', monospace;
 }
 
 #principal-footer {
+    background-color: #012677;
+}
+
+#p-footer {
     text-align: center;
-    color: rgb(0, 0, 0);
+    color: #fff;
     margin-top: 150px;
+    height: 45px;
+    padding: 20px 0;
+    display: flex;
+    justify-content: center; /* Alinha o texto horizontalmente */
+    align-items: center; /* Alinha o texto verticalmente */
+    height: 100%;
+}
+
+.principal-header {
+    background-size: cover;
+    border-top: 1px solid transparent;
+    height: 60px;
+    background-color: #012677;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Deixa o "Earth" à esquerda e os itens do navbar à direita */
+    padding: 0 20px;
+}
+
+.principal-header h1 {
+    font-weight: 500;
+    font-size: 110px;
+    letter-spacing: 10px;
+    text-align: left;
+    padding-top: 185px;
+    color: white;
+    font-family: 'Reddit Mono', monospace;
+}
+
+.principal-header h2 {
+    font-size: 30px;
+    word-spacing: 3px;
+    letter-spacing: 6px;
+    text-align: left;
+    color: white;
+}
+
+.navbar {
+    font-family: 'Reddit Mono', monospace;
+    font-size: 18px;
+    z-index: 5;
+    transition: background-color 0.3s;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    padding-right: 30px;
+}
+
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    padding-bottom: 35px;
+}
+
+.navbar li {
+    display: inline;
+    margin-right: 5px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #fff;
+    padding-left: 25px;
+}
+
+.navbar a:hover {
+    color: black;
+}
+
+.reddit-mono-fonte {
+    font-family: "Reddit Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 100px;
+    font-style: normal;
+}
+
+#main-content {
+    background-color: #001449;
+    color: #fff;
+}
+
+.secao {
+    display: flex;
+    align-items: center;
+    height: 60px; /* Ajuste conforme necessário */
+}
+
+#text {
+    margin-left: 20px; /* Ajuste conforme necessário */
 }
