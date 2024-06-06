@@ -1,3 +1,5 @@
+/* style.css */
+
 body {
     font-family: 'Reddit Mono', monospace;
 }
@@ -63,7 +65,6 @@ body {
     margin: 0;
     padding: 0;
     display: flex;
-    padding-bottom: 35px;
 }
 
 .navbar li {
@@ -73,7 +74,7 @@ body {
 
 .navbar a {
     text-decoration: none;
-    color: #fff;
+    color: #ffd417;
     padding-left: 25px;
 }
 
