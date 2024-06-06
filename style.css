@@ -2,10 +2,10 @@
 
 body {
     font-family: 'Reddit Mono', monospace;
-    background-color: #001449; /* Adiciona um background color */
-    color: #fff; /* Define a cor do texto para branco */
-    margin: 0; /* Remove a margem padrão do body */
-    padding: 0; /* Remove o padding padrão do body */
+    background-color: #001449;
+    color: #fff;
+    margin: 0;
+    padding: 0;
 }
 
 #principal-footer {
@@ -19,8 +19,8 @@ body {
     height: 45px;
     padding: 20px 0;
     display: flex;
-    justify-content: center; /* Alinha o texto horizontalmente */
-    align-items: center; /* Alinha o texto verticalmente */
+    justify-content: center;
+    align-items: center;
     height: 100%;
 }
 
@@ -31,7 +31,7 @@ body {
     background-color: #012677;
     display: flex;
     align-items: center;
-    justify-content: space-between; /* Deixa o "Earth" à esquerda e os itens do navbar à direita */
+    justify-content: space-between;
     padding: 0 20px;
 }
 
@@ -101,11 +101,11 @@ body {
 .secao {
     display: flex;
     align-items: center;
-    height: 60px; /* Ajuste conforme necessário */
+    height: 60px;
 }
 
 #text {
-    margin-left: 20px; /* Ajuste conforme necessário */
+    margin-left: 20px;
 }
 
 #login-section {
@@ -114,19 +114,73 @@ body {
     margin-left: auto;
 }
 
-#login-section input {
-    margin-right: 10px;
-    padding: 5px;
-}
-
-#login-section button {
+#login-section .login-link,
+#login-section .signup-link {
     padding: 5px 10px;
     background-color: #ffd417;
     border: none;
     cursor: pointer;
+    text-decoration: none;
+    color: #012677;
+    border-radius: 5px;
+    margin-left: 10px;
 }
 
-#login-section button:hover {
+#login-section .login-link:hover,
+#login-section .signup-link:hover {
+    background-color: #012677;
+    color: #fff;
+}
+
+.signup-section,
+.login-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #001449;
+    color: #fff;
+}
+
+.signup-section h1,
+.login-section h1 {
+    margin-bottom: 20px;
+}
+
+.signup-section .form-group,
+.login-section .form-group {
+    margin-bottom: 15px;
+}
+
+.signup-section .form-group label,
+.login-section .form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.signup-section .form-group input,
+.login-section .form-group input {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #012677;
+    width: 250px;
+}
+
+.signup-section button,
+.login-section button {
+    padding: 10px 20px;
+    background-color: #ffd417;
+    border: none;
+    cursor: pointer;
+    color: #012677;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.signup-section button:hover,
+.login-section button:hover {
     background-color: #012677;
     color: #fff;
 }
