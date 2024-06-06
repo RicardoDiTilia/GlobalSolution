@@ -6,6 +6,11 @@ body {
     color: #fff;
     margin: 0;
     padding: 0;
+    height: 100vh; /* Ajuste para garantir a altura completa */
+    background-image: url('img/swimming-with-tropical-fish-underwater-paradise-generated-by-ai.jpg');
+    background-size: cover; /* Cobrir toda a área */
+    background-position: center; /* Centralizar a imagem */
+    background-repeat: no-repeat; /* Evitar repetição da imagem */
 }
 
 #principal-footer {
@@ -207,7 +212,7 @@ body {
     margin-bottom: 12%;
 }
 
-.signup-link{
+.signup-link {
     color: white;
 }
 
@@ -226,19 +231,12 @@ body {
     margin-bottom: 12%;
 }
 
-.signin-link{
+.signin-link {
     color: white;
 }
 
-body {
-    background-image: url('img/swimming-with-tropical-fish-underwater-paradise-generated-by-ai.jpg'); 
-    background-size: cover; 
-    background-position: center; 
-    background-repeat: no-repeat; 
-}
-
 .info-section {
-    background-color: rgba(0, 0, 0, 0.7); /* Caixa semi-transparente */
+    background-color: rgba(0, 0, 0, 0.7); 
     color: white;
     padding: 20px;
     border-radius: 10px;
@@ -250,11 +248,21 @@ body {
 }
 
 .info-section h1 {
-    font-size: 36px;
+    font-size: 28px;
     margin-bottom: 20px;
 }
 
-.info-section p {
+.info-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.info-section ul li {
     font-size: 18px;
     line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+.content {
+    padding-bottom: 60px; /* Espaço para o rodapé fixo */
 }
