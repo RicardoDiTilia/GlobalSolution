@@ -2,6 +2,10 @@
 
 body {
     font-family: 'Reddit Mono', monospace;
+    background-color: #001449; /* Adiciona um background color */
+    color: #fff; /* Define a cor do texto para branco */
+    margin: 0; /* Remove a margem padrão do body */
+    padding: 0; /* Remove o padding padrão do body */
 }
 
 #principal-footer {
@@ -102,4 +106,27 @@ body {
 
 #text {
     margin-left: 20px; /* Ajuste conforme necessário */
+}
+
+#login-section {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+#login-section input {
+    margin-right: 10px;
+    padding: 5px;
+}
+
+#login-section button {
+    padding: 5px 10px;
+    background-color: #ffd417;
+    border: none;
+    cursor: pointer;
+}
+
+#login-section button:hover {
+    background-color: #012677;
+    color: #fff;
 }
