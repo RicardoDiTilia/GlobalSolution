@@ -1,18 +1,18 @@
-/* style.css */
-
+/* Estilo geral */
 body {
     font-family: 'Reddit Mono', monospace;
     background-color: #001449;
     color: #fff;
     margin: 0;
     padding: 0;
-    height: 100vh; /* Ajuste para garantir a altura completa */
+    height: 100vh;
     background-image: url('img/swimming-with-tropical-fish-underwater-paradise-generated-by-ai.jpg');
-    background-size: cover; /* Cobrir toda a área */
-    background-position: center; /* Centralizar a imagem */
-    background-repeat: no-repeat; /* Evitar repetição da imagem */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
+/* Estilo do rodapé */
 #principal-footer {
     background-color: #012677;
     position: fixed;
@@ -26,6 +26,7 @@ body {
     color: #fff;
 }
 
+/* Estilo do cabeçalho */
 .principal-header {
     background-size: cover;
     border-top: 1px solid transparent;
@@ -53,6 +54,7 @@ body {
     letter-spacing: 6px;
     text-align: left;
     color: white;
+    margin: 0;
 }
 
 .navbar {
@@ -66,50 +68,60 @@ body {
     padding-right: 30px;
 }
 
-.navbar ul {
+/* Esconder itens de menu por padrão */
+.menu-items {
+    display: none;
     list-style: none;
     margin: 0;
     padding: 0;
-    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background-color: #012677;
+    border: 1px solid #fff;
+    border-radius: 5px;
 }
 
-.navbar li {
-    display: inline;
-    margin-right: 5px;
+.menu-items li {
+    margin: 0;
 }
 
-.navbar a {
+.menu-items a {
     text-decoration: none;
     color: #ffd417;
-    padding-left: 25px;
+    padding: 10px 20px;
+    display: block;
 }
 
-.navbar a:hover {
+.menu-items a:hover {
+    background-color: #ffd417;
+    color: #012677;
+}
+
+/* Ícone do menu */
+.menu-icon {
+    cursor: pointer;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    color: #ffd417;
+}
+
+.menu-icon:hover {
     color: black;
 }
 
-.reddit-mono-fonte {
-    font-family: "Reddit Mono", monospace;
-    font-optical-sizing: auto;
-    font-weight: 100px;
-    font-style: normal;
-}
-
-#main-content {
-    background-color: #001449;
-    color: #fff;
-}
-
+/* Estilo da seção */
 .secao {
     display: flex;
     align-items: center;
     height: 60px;
+    width: 100%;
+    justify-content: space-between;
 }
 
-#text {
-    margin-left: 20px;
-}
-
+/* Estilo da seção de login */
 #login-section {
     display: flex;
     align-items: center;
@@ -134,6 +146,12 @@ body {
     color: #fff;
 }
 
+/* Mostrar itens de menu quando ativo */
+.menu-active .menu-items {
+    display: flex;
+}
+
+/* Restante do CSS (mantendo o estilo existente) */
 .signup-section,
 .login-section {
     display: flex;
@@ -264,5 +282,5 @@ body {
 }
 
 .content {
-    padding-bottom: 60px; /* Espaço para o rodapé fixo */
+    padding-bottom: 60px;
 }
