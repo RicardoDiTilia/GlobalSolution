@@ -119,6 +119,7 @@ body {
     display: flex;
     align-items: center;
     margin-left: auto;
+    margin-right: 20px; /* Adicionado para distanciar a seção de login do menu */
 }
 
 #login-section .login-link,
@@ -131,6 +132,10 @@ body {
     color: #012677;
     border-radius: 5px;
     margin-left: 10px;
+}
+
+#login-section .login-link {
+    margin-right: 10px; /* Adicionado para distanciar o link de login do link de signup */
 }
 
 #login-section .login-link:hover,
