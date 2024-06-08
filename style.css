@@ -277,6 +277,11 @@ body {
     margin-bottom: 10px;
 }
 
+.info-section p {
+    font-size: 20px;
+    margin-top: 20px; 
+  }
+
 .content {
     padding-bottom: 60px;
 }
