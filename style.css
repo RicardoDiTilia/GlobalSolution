@@ -340,3 +340,11 @@ body {
 .next-btn:hover {
     background-color: rgba(0, 0, 0, 0.8);
 }
+
+/* Estilos para redimensionar a imagem */
+.selo-img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px; /* Espaço adicional entre o texto e a imagem */
+    border-radius: 10px;
+}
