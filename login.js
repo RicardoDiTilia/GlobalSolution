@@ -9,7 +9,7 @@ document.getElementById('login-form').addEventListener('submit', function(event)
 
   if (username === storedUsername && password === storedPassword) {
       alert('Login bem-sucedido!');
-      window.location.href = 'main.html';
+      window.location.href = 'index.html';
   } else {
       alert('Usuário ou senha incorretos!');
   }
